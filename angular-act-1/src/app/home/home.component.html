@@ -1,5 +1,9 @@
 <!-- Primera Sección Carrusel -->
-<div id="carouselExampleIndicators" class="carousel slide container-md">
+<div
+  id="carouselExampleIndicators"
+  class="carousel slide container-fluid"
+  data-bs-ride="carousel"
+>
   <div class="carousel-indicators">
     <button
       type="button"
@@ -23,44 +27,29 @@
     ></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="2000">
       <img
-        src="/assets/images/1366_2000.jpg"
+        src="/assets/images/slider-desktop-aw-se_1.jpg"
         class="d-block w-100"
         alt="banner1"
+        style="max-height: 600px; object-fit: cover; height: 100%"
       />
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="2000">
       <img
-        src="/assets/images/840_560.jpeg"
+        src="/assets/images/slider-desktop-iphone-12.jpg"
         class="d-block w-100"
         alt="banner2"
+        style="max-height: 600px; object-fit: cover; height: 100%"
       />
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" data-bs-interval="2000">
       <img
-        src="/assets/images/iphone_switch__eul0j4j1qioi_og.png"
+        src="/assets/images/slider-desktop-airpods_2.jpg"
         class="d-block w-100"
         alt="banner3"
+        style="max-height: 600px; object-fit: cover; height: 100%"
       />
     </div>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExampleIndicators"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExampleIndicators"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
