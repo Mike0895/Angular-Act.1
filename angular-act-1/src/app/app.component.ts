@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import {MatMenuModule} from '@angular/material/menu';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -13,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
     MatMenuModule,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent, 
+    RouterLink
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,0 +1,5 @@
+/* Agrega cualquier estilo necesario aquí */
+.nav-link {
+    cursor: pointer;
+    /* Asegúrate de que el cursor sea un puntero para los enlaces */
+}

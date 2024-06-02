@@ -1,0 +1,98 @@
+<div class="container mt-4 py-5">
+  <!-- String Interpolation -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body text-center">
+      <h5 class="card-title">Bienvenido</h5>
+      <p class="card-text">{{ message }}</p>
+      <img
+        src="/assets/images/slider-desktop-aw-se_1.jpg"
+        class="img-fluid"
+        alt="Apple Store"
+      />
+    </div>
+  </div>
+
+  <!-- Property Binding -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body text-center">
+      <h5 class="card-title">Compra el nuevo Ipad Pro</h5>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <img
+            src="/assets/images/ipad-pro.jpeg"
+            class="img-fluid"
+            alt="iPhone 15 Pro Max"
+            style="max-height: 300px; max-width: 100%; margin-bottom: 10px"
+          />
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        [disabled]="isDisabled"
+        style=""
+      >
+        Añadir al Carrito
+      </button>
+      <div
+        class="form-check mt-2 d-flex justify-content-center align-items-center"
+      >
+        <input
+          class="form-check-input me-2"
+          type="checkbox"
+          id="toggleDisable"
+          [(ngModel)]="isDisabled"
+        />
+        <label class="form-check-label" for="toggleDisable">
+          Desactivar botón de compra
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Binding -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body text-center">
+      <h5 class="card-title">Agregar a la Cesta</h5>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <img
+            src="/assets/images/iphone-15-pro.jpg"
+            class="img-fluid"
+            alt="iPhone 15 Pro Max"
+            style="max-height: 300px; max-width: 100%; margin-bottom: 10px"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button
+            type="button"
+            class="btn btn-success btn-lg"
+            (click)="incrementCount()"
+            style="margin-top: 10px; max-width: 200px"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+      <p class="card-text mt-2">
+        Tienes {{ count }} iPhone 15 Pro Max en la cesta.
+      </p>
+    </div>
+  </div>
+
+  <!-- Two-way Data Binding -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body text-center">
+      <h5 class="card-title">Personaliza tu iPhone</h5>
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        placeholder="Pon tu Nombre para personalizar la caja"
+        [(ngModel)]="name"
+      />
+      <p class="card-text mt-2">Este iPhone 15 pertenece a {{ name }}</p>
+    </div>
+  </div>
+</div>
